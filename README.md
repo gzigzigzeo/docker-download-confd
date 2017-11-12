@@ -10,9 +10,11 @@ Usage
 
 ```
 # Required!
-ARG CONFD_VERSION 0.14.0
+ARG CONFD_VERSION=0.14.0
 FROM gzigzigzeo/docker-download-confd
 
+# ================================
+# Rest of the image....
 # ================================
 
 RUN mkdir -p /etc/confd/templates
@@ -20,7 +22,7 @@ RUN mkdir -p /etc/confd/conf.d
 
 COPY --from=confd /usr/local/bin/confd /usr/local/bin/confd
 
-# .....
+ENTRYPOINT /start.sh
 ```
 
 License

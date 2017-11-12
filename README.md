@@ -10,7 +10,7 @@ Usage
 
 ```
 # Required!
-ARG CONFD_VERSION 0.14.0
+ARG CONFD_VERSION=0.14.0
 FROM gzigzigzeo/docker-download-confd as confd
 
 # ================================

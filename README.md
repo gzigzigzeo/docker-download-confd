@@ -31,7 +31,7 @@ License
 Configuration files and code in this repository are distributed under the
 [MIT license](LICENSE).
 
-License information for the software contained in gzigzigzeo/docker-get-confd
+License information for the software contained in gzigzigzeo/docker-download-confd
 Docker image:
 
 * [confd](https://github.com/kelseyhightower/confd/blob/master/LICENSE)

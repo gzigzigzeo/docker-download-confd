@@ -1,6 +1,11 @@
-FROM alpine:latest as confd
+FROM alpine:latest
 
-# ARG CONFD_VERSION=0.14.0
+MAINTAINER Viktor Sokolov <gzigzigzeo@evilmartians.com>
+
+LABEL maintainer="Viktor Sokolov <gzigzigzeo@evilmartians.com>" \
+      org.label-schema.build-date="${BUILD_DATE}" \
+      org.label-schema.vcs-ref="${VCS_REF}" \
+      org.label-schema.vcs-url="https://github.com/gzigzigzeo/docker-download-confd"
 
 RUN apk add --no-cache curl ca-certificates
 
